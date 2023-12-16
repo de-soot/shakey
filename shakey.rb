@@ -2,11 +2,11 @@ willy_hash = {"William Shakespeare"=>{"1"=>{"title"=>"The Two Gentlemen of Veron
 
 def display_willyshakey(shakey_hash)
   shakey_hash.each { |william_shakespeare, index|
-    print(william_shakespeare, "\n")
+    print("#{william_shakespeare}\n")
     index.each { |key, value|
       print("\t", key, "\n")
-      print("\t\t", "title:", value["title"], "\n")
-      print("\t\t", "finished:", value["finished"], "\n")
+      print("\t\ttitle: #{value["title"]}\n")
+      print("\t\tfinished: #{value["finished"]}\n")
     }
   }
 end
